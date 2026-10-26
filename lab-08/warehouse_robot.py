@@ -64,4 +64,16 @@ def a_star(start, goal):
     return None
 
 
-a_star("Receiving", "Packing Station")
+
+result = a_star("Receiving", "Packing Station")
+
+
+print("\n--- Final Result ---")
+print("Starting Location: Receiving")
+print("Goal Location: Packing Station")
+print("Final Path:", result)
+
+if result is not None:
+    print("Final Path Cost:", get_g(result))
+else:
+    print("No path found!")
