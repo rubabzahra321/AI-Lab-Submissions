@@ -77,3 +77,5 @@ if result is not None:
     print("Final Path Cost:", get_g(result))
 else:
     print("No path found!")
+
+# THIS IS TESTING PURPOSES ONLY. DO NOT MODIFY THIS CODE.
