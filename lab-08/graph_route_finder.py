@@ -75,7 +75,6 @@ def a_star(start, goal):
 
 result = a_star("S", "G")
 
-print("\n--- Final Result ---")
 print("Starting Node: S")
 print("Goal Node: G")
 print("Final Path:", result)
