@@ -60,6 +60,9 @@ def a_star(start, goal):
               "f =", get_f(path))
 
         if node == goal:
+            print("\nPath found by A*:", path)
+            print("Total cost of this path:", get_g(path))
+            print("Total nodes explored:", explored)
             return path
 
         for neighbour in graph[node]:
@@ -69,7 +72,15 @@ def a_star(start, goal):
     return None
 
 
-a_star("S", "G")
-print("\nPath found by A*:", path)
-print("Total cost of this path:", get_g(path))
-print("Total nodes explored:", explored)
+
+result = a_star("S", "G")
+
+print("\n--- Final Result ---")
+print("Starting Node: S")
+print("Goal Node: G")
+print("Final Path:", result)
+
+if result is not None:
+    print("Final Path Cost:", get_g(result))
+else:
+    print("No path found!")
