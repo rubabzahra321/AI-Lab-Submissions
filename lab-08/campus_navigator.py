@@ -5,6 +5,7 @@ campus = {
     "Admin Block": {"Academic Block": 120},
     "Academic Block": {"Library": 100},
     "Common Room": {"Library": 50},
+    "Basement": {"Library": 80},
     "Library": {}
 }
 
