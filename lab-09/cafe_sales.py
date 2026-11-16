@@ -29,3 +29,5 @@ coffee_last_two = units[-2:, 1]
 print("Coffee, last two days:", coffee_last_two)
 
 print("Total weekly revenue:", daily_revenue.sum())
+
+# comment is added to test git clone command in local folder
