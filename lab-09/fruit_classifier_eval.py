@@ -26,3 +26,8 @@ w_pred = np.array([140.0, 130.0, 210.0, 170.0])
 mse = np.mean((w_true - w_pred) ** 2)
 
 print("MSE:", mse)
+
+# added for checking the incorrect version
+wrong_samples = y_pred != y_test
+
+print("Wrong predictions:", wrong_samples)
